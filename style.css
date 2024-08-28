@@ -3,12 +3,11 @@ body {
   grid-template-columns: 1fr 4fr;
   grid-template-rows: 1fr 5fr;
   margin: 0;
+  min-height: 100vh;
 }
 
 .main-content-container {
   background-color: blue;
-  grid-column: 1 / 2;
-  grid-row: 1 / 6;
 }
 
 .header {
@@ -17,4 +16,48 @@ body {
 
 .sidebar {
   background-color: brown;
+  grid-column: 1 / 2;
+  grid-row: 1 / 6;
+  display: grid;
+  align-items: start;
+  justify-content: center;
+  grid-template-rows: 1fr 3fr 4fr;
+}
+.logo-title {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 10px;
+  margin-top: 10px;
+  align-items: center;
+}
+.logo-title img {
+  max-height: 34px;
+  aspect-ratio: 0.867;
+}
+
+.header-title {
+  color: bisque;
+  font-size: 30px;
+  font-weight: 900;
+  margin: 0;
+}
+.main-navigation {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  align-items: center;
+  gap: 10px;
+}
+.setting-navigation p,
+.main-navigation p {
+  color: bisque;
+  font-size: 24px;
+  font-weight: 800;
+  margin: 0;
+}
+
+.setting-navigation {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  align-items: center;
+  gap: 10px;
 }
