@@ -1,3 +1,20 @@
 body {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 1fr 5fr;
+  margin: 0;
+}
+
+.main-content-container {
+  background-color: blue;
+  grid-column: 1 / 2;
+  grid-row: 1 / 6;
+}
+
+.header {
   background-color: blueviolet;
+}
+
+.sidebar {
+  background-color: brown;
 }
