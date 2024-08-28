@@ -7,15 +7,17 @@ body {
 }
 
 .main-content-container {
-  background-color: blue;
+  background-color: #5f797b;
 }
 
 .header {
-  background-color: blueviolet;
+  background-color: #81b29a;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
 }
 
 .sidebar {
-  background-color: brown;
+  background-color: #3d405b;
   grid-column: 1 / 2;
   grid-row: 1 / 6;
   display: grid;
@@ -27,16 +29,18 @@ body {
   display: grid;
   grid-template-columns: 1fr 3fr;
   gap: 10px;
-  margin-top: 10px;
+  margin-top: 20px;
   align-items: center;
 }
 .logo-title img {
   max-height: 34px;
   aspect-ratio: 0.867;
+  filter: brightness(0) saturate(100%) invert(69%) sepia(21%) saturate(1038%)
+    hue-rotate(342deg) brightness(98%) contrast(95%);
 }
 
 .header-title {
-  color: bisque;
+  color: #f4a261;
   font-size: 30px;
   font-weight: 900;
   margin: 0;
@@ -49,15 +53,21 @@ body {
 }
 .setting-navigation p,
 .main-navigation p {
-  color: bisque;
+  color: #f4a261;
   font-size: 24px;
   font-weight: 800;
   margin: 0;
 }
-
+.main-navigation img,
+.setting-navigation img {
+  max-height: 34px;
+  filter: invert(69%) sepia(21%) saturate(1038%) hue-rotate(342deg)
+    brightness(98%) contrast(95%);
+}
 .setting-navigation {
   display: grid;
   grid-template-columns: 1fr 3fr;
   align-items: center;
   gap: 10px;
+  margin-top: 30px;
 }
