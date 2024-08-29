@@ -194,6 +194,7 @@ p.project-card-title {
 p.project-card-title,
 p.project-card-text {
   color: #5f797b;
+  padding-right: 20px;
 }
 .project-card-buttons > img {
   width: 32px;
@@ -219,13 +220,13 @@ p.project-card-text {
   font-weight: 900;
   color: #f4a261;
   align-self: center;
+  justify-self: center;
 }
 .announcement-headlines {
   display: grid;
   resize: both;
   grid-template-columns: 1fr;
-  grid-template-rows: auto;
-  grid-auto-rows: minmax(auto, 1fr);
+  grid-template-rows: repeat(3, 1fr);
   margin: 20px;
   padding: 20px;
   border-radius: 10px;
@@ -242,9 +243,37 @@ p.project-card-text {
 }
 .headline-text {
   color: #5f797b;
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;
+}
+.trending {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 50px 1fr;
+}
+.trending-title {
+  font-size: 30px;
+  font-weight: 900;
+  color: #f4a261;
+  align-self: center;
+  justify-self: center;
+}
+.trending-people {
+  display: grid;
+  resize: both;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: repeat(4, 1fr);
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #f4a261;
+}
+img.person-icon {
+  height: 50px;
+  width: 50px;
+  align-self: center;
+  justify-self: center;
+}
+div.person-info {
+  justify-self: center;
+  align-self: center;
+  color: #5f797b;
 }
